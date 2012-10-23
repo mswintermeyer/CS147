@@ -46,9 +46,8 @@
 			$t = time();
 			
 			// Insert into orders
-			// but oops query is not defined... yet
 			
-			$query = "";
+			$query = "insert into orders (name, email, book, time) VALUES ('$name', '$email', '$book', '$t')";
 			
 			$result = mysql_query($query);
 			
